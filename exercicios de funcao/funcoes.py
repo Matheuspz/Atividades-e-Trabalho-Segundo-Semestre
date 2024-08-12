@@ -80,3 +80,32 @@ def exercicio5():
     x = int(input("Digite sua idade: "))
     print(classeEleitoral(x))
 #----------------//------------------
+
+#EXERCÍCIO 6
+#----------------//------------------
+def parouimnpar(numero):
+    if numero % 2 == 0:
+        return 1
+    elif numero % 2 == 1:
+        return -1
+    else:
+        return "ERROR"
+def exercicio6():
+    x = int(input("Digite um número: "))
+    print(parouimnpar(x))
+#----------------//------------------
+
+#EXERCÍCIO 7
+#----------------//------------------
+def calculoFatorial(numero):
+    resultado = 1
+    if numero < 0:
+        return "Digite um número positivo"
+    else:
+        for i in range(1, numero + 1):
+            resultado *= i
+        return resultado
+def exercicio7():
+    x = int(input("Digite um número: "))
+    print(calculoFatorial(x))
+#----------------//------------------
