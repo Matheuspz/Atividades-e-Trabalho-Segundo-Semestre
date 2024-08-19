@@ -14,5 +14,8 @@ while x == 0:
     
     
 cpf = re.sub(r"[^0-9]","",cpf)
-#x = verificarCpf(cpf)
-#print(x)
+x = verificarCpf(cpf)
+print(x)
+cpf_list = [int(digit) for digit in cpf]
+y = validarCpf(cpf_list)
+print(y)
