@@ -95,92 +95,13 @@ def exercicio_12():
 def exercicio_13():
     numCand = int(input("Digite a quantidade de candidatos: "))
     numVot = int(input("Digite a quantidade de votantes: "))
-    O = np.array([], dtype=object)
+    O = np.array([])
     for i in range(0,numCand):
         O = np.append(O, i+1)
-    P = np.array([], dtype=object)
+    P = np.array([])
     for i in range(0,numVot):
         P = np.append(P, int(input("")))
-    valido = np.isin(P,O)
-    P[~valido] = None
-    x,y = np.unique(P[P != None], return_counts=True)
+    x,y = np.unique(P, return_counts=True)
     print(np.asarray((x,y)).T)
     
-def exercicio_14():
-    #Código com a função SET do python
-    #Q = set(range(1,100))
-    #R = int(input("Digite nova matricula: "))
-    #if R in Q:
-    #    print("ERROR!")
-    #    print("Matricula já existente")
-    #else:
-    #    Q.add(R)
-    #    print("Matricula adicionada")
-    
-    #Código com Array
-    Q = np.array(range(1,100))
-    R = int(input("Digite nova matricula: "))
-    if np.isin(R,Q):
-        print("ERROR!")
-        print("Matricula já existente")
-    else:
-        Q = np.append(Q,R)
-        print("Matricula Adicionada")
-        
-def exercicio_15():
-    S = np.array(range(1,255,3))
-    Sp = np.array([])
-    Si = np.array([])
-    for i in S:
-        if i % 2 == 0:
-            Sp = np.append(Sp,i)
-        else:
-            Si = np.append(Si,i)
-    print("Pares: ", Sp)
-    print("Impares: ", Si)
-
-def exercicio_16():
-    #A)
-    A1 = np.array(range(1,53,4))    
-    A2 = np.array(range(76,254,7))
-    A = np.concatenate((A2,A1))
-    A = np.sort(A)                  #Criação do Array A
-    #Não estava com vontade de pensar em numeros então fiz dessa maneira
-    B1 = np.array(range(540,21,-6))
-    B2 = np.array(range(63,237,3))
-    B = np.concatenate((B1,B2))     
-    B = np.sort(B)                  #Criação do Array B
-    #Não estava com vontade de pensar em numeros então fiz dessa maneira
-    #B/C)
-    N = len(A)
-    M = len(B)
-    C = np.zeros(N + M, dtype=int)
-    i = j = k = 0 
-    while i < N and j < M:
-        if A[i] <= B[j]:
-            C[k] = A[i]
-            i += 1
-        else:
-            C[k] = B[j]
-            j += 1
-        k += 1
-    while i < N:
-        C[k] = A[i]
-        i += 1
-        k += 1
-    while j < M:
-        C[k] = B[j]
-        j += 1
-        k += 1
-    print(C)
-    #da para resumir isso em 2 linhas: C = np.concatenate((A,B)); C = np.sort(C)
-    
-def exercicio_17():
-    notas = np.array([9.9, 9.7, 9.8, 10, 10])
-    x = min(notas)
-    y = max(notas)
-    media = np.mean(notas[(notas != y) & (notas != x)])
-    print(media)
-    
-exercicio_17()
-
+exercicio_13()
