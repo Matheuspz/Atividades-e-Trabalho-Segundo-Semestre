@@ -1,4 +1,4 @@
-function Somar() {
+/*function Somar() {
     let x = document.getElementById("num1").value;
     let y = document.getElementById("num2").value;
     console.log(typeof(x))
@@ -8,4 +8,8 @@ function Somar() {
     newDiv.append(newP)
     document.body.append(newDiv)
     
+}*/
+function atualizaDisplay(valor) {
+    const visor = document.getElementById("visor")
+    visor.value = visor.value + valor
 }
