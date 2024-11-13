@@ -33,16 +33,16 @@
                 </div><hr>
                 <div class="row mb-3">
                     <div class="col-3">
-                        <button type="button" class="btn btn-secondary w-100">CE</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="limparVisor()">C</button>
                     </div>
                     <div class="col-3">
-                        <button type="button" class="btn btn-secondary w-100">C</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="deletar()">DEL</button>
                     </div>
                     <div class="col-3">
-                        <button type="button" class="btn btn-secondary w-100">Del</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="porcentagem()">%</button>
                     </div>
                     <div class="col-3">
-                        <button type="button" class="btn btn-secondary w-100">/</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="dividir()">/</button>
                     </div>
                 </div>
                 <div class="row mb-3">
@@ -56,7 +56,7 @@
                         <button type="button" class="btn btn-secondary w-100" onclick="atualizaDisplay('9')">9</button>
                     </div>
                     <div class="col-3">
-                        <button type="button" class="btn btn-secondary w-100">*</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="multiplicar()">*</button>
                     </div>
                 </div>
                 <div class="row mb-3">
@@ -70,7 +70,7 @@
                         <button type="button" class="btn btn-secondary w-100" onclick="atualizaDisplay('6')">6</button>
                     </div>
                     <div class="col-3">
-                        <button type="button" class="btn btn-secondary w-100">-</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="subtrair()">-</button>
                     </div>
                 </div>
                 <div class="row mb-3">
@@ -84,21 +84,21 @@
                         <button type="button" class="btn btn-secondary w-100" onclick="atualizaDisplay('3')">3</button>
                     </div>
                     <div class="col-3">
-                        <button type="button" class="btn btn-secondary w-100">+</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="somar()">+</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-3">
-                        <button type="button" class="btn btn-secondary w-100">+/-</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="alternarSinal()">+/-</button>
                     </div>
                     <div class="col-3">
                         <button type="button" class="btn btn-secondary w-100" onclick="atualizaDisplay('0')">0</button>
                     </div>
                     <div class="col-3">
-                        <button type="button" class="btn btn-secondary w-100" onclick="atualizaDisplay(',')">,</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="atualizaDisplay('.')">,</button>
                     </div>
                     <div class="col-3">
-                        <button type="button" class="btn btn-secondary w-100">=</button>
+                        <button type="button" class="btn btn-secondary w-100" onclick="calcular()">=</button>
                     </div>
                 </div>
             </div>
